@@ -276,7 +276,7 @@ export default class Visibility extends Component {
     if (this.ticking) return
 
     this.ticking = true
-    requestAnimationFrame(() => this.handleUpdate())
+    requestAnimationFrame(this.handleUpdate)
   }
 
   handleRef = c => (this.ref = c)
