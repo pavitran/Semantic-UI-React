@@ -146,7 +146,7 @@ class Tab extends Component {
 
     return (
       <ElementType {...rest}>
-        {menu.props.attached !== 'bottom' && menu}
+        {menu.props.attached !== 'bottom' && <div className="apples">menu</div>}
         {this.renderItems()}
         {menu.props.attached === 'bottom' && menu}
       </ElementType>
